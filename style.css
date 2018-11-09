@@ -18,7 +18,7 @@ body {
 }
 
 h1,
-h2,
+h2, 
 h3,
 p {
     margin-bottom: 20px;
@@ -40,7 +40,7 @@ h1 {
     padding-bottom: 20px;
     font-size: 30px;
     line-height: 49px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid teal;
 }
 
 h2,
@@ -48,16 +48,29 @@ h3 {
     font-size: 22px;
 }
 
-
 /* header */
 #masthead {
     position: fixed;
-    width: 99%;
-    margin: 0 0 3434px;
+    width: 100%;
+    margin: 0 0 30px;
     overflow: auto;
     color: white;
-    background: aquamarine;
-    border-bottom: 2px solid white;
+    background: teal;
+    border-bottom: 2px solid #ccc;
+}
+
+#nameArt {
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: teal;
+    text-align: center;
+    text-decoration: none;
+    background: black;
 }
 
 .container a {
@@ -77,7 +90,7 @@ nav a {
     line-height: 18px;
     color: white;
     text-decoration: none;
-    border-left: 1px solid black;
+    border-left: 1px solid gray;
 }
 
 nav a: first-child {
@@ -99,6 +112,33 @@ nav a: first-child {
     border: 1px solid #ddd;
 }
 
+
+
+/* sidebar */
+.sidebar {
+    float: right;
+    width: 100%;
+    max-width:270px;
+    padding:30px;
+    margin-bottom: 20px;
+    background: teal;
+    border: 1px solid black;
+}
+
+h3, .sidebar h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid white;
+}
+
+.social {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
 /* portfolio page */
 .work {
     position: relative;
@@ -118,12 +158,6 @@ nav a: first-child {
     opacity: 0.8;
 }
 
-.work img {
-    width: 100%;
-    border: 0 none;
-    opacity: 0.8;
-}
-
 .work h3 {
     position: absolute;
     bottom: 20px;
@@ -132,9 +166,9 @@ nav a: first-child {
     margin-bottom: 0;
     font-weight: 300;
     line-height: 30px;
-    color: white;
+    color: turquoise;
     text-align: center;
-    background: aquamarine;
+    background: white;
     border-bottom: 0;
 }
 
@@ -146,32 +180,6 @@ nav a: first-child {
     margin-right: 25px;
 }
 
-/* sidebar */
-.sidebar {
-    float: right;
-    width: 100%;
-    max-width:270px;
-    padding:30px;
-    margin-bottom: 20px;
-    background: aquamarine;
-    border: 1px solid black;
-}
-
-h3, .sidebar h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    border-bottom: 2px solid  aquamarine;
-}
-
-.social {
-    width: 62px;
-    height: 62px;
-    margin-top: 8px;
-    margin-right: 5px;
-}
-
-
 /* contact page */
 #contact-form ul {
     margin-bottom: 20px;
@@ -182,42 +190,43 @@ h3, .sidebar h2 {
 }
 
 label,
-input[type=text]
-input[type=email]
+input[type=text],
+input[type=email],
 textarea {
     display: block;
     width: 100%;
 }
 
-input[type=text]
-input[type=email]
+input[type=text],
+input[type=email],
 textarea {
     height: 35px;
     padding: 0 10px;
     font-size: 14px;
-    border: 1px solid violet;
+    border: 1px solid teal;
 }
 
 textarea {
     height: 200px;
 }
 
-input[type=sumbit] {
+input[type=submit] {
     padding: 10px 30px;
     font-size: 18px;
-    color:indianred;
+    color: olive;
     cursor: pointer;
-    background: chartreuse;
-    border:0 none;
+    background: rebeccapurple;
+    border: 0 none;
 }
+
 
 /* footer */
 footer {
     padding: 30px 0;
     clear: both;
     font-size: 12px;
-    color: aquamarine;
+    color: black;
     text-align: center;
-    background: black;
-    border-top: 8px solid aquamarine;
+    background: turquoise;
+    border-top: 8px solid turquoise;
 }
